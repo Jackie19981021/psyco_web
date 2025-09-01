@@ -1,0 +1,158 @@
+{
+  "name": "PSYCO - Revolutionary Mental Health Social Platform",
+  "short_name": "PSYCO",
+  "description": "Connect, heal, and grow with AI-powered mental health support and peer connections",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": [
+    "health",
+    "lifestyle",
+    "medical",
+    "social"
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-desktop.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/images/screenshot-mobile.jpg", 
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96", 
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI朋友聊天",
+      "short_name": "AI Chat",
+      "description": "与AI朋友开始治愈性对话",
+      "url": "/ai-friends",
+      "icons": [
+        {
+          "src": "/icons/shortcut-ai-chat.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "心理测试",
+      "short_name": "Tests",
+      "description": "进行专业心理健康评估", 
+      "url": "/mental-health-test",
+      "icons": [
+        {
+          "src": "/icons/shortcut-test.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "社交匹配",
+      "short_name": "Match",
+      "description": "寻找志同道合的心理健康伙伴",
+      "url": "/social-matching",
+      "icons": [
+        {
+          "src": "/icons/shortcut-match.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "危机求助",
+      "short_name": "Crisis",
+      "description": "获取紧急心理健康支持",
+      "url": "/crisis-support",
+      "icons": [
+        {
+          "src": "/icons/shortcut-crisis.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "web+psyco",
+      "url": "/protocol-handler?url=%s"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
