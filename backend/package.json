@@ -10,8 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "18.x",
-    "npm": "9.x"
+    "node": "22.x",
+    "npm": "10.x"
   },
   "keywords": ["psycho", "mental-health", "matching", "chat", "render", "nodejs"],
   "author": "Jackie Chen",
