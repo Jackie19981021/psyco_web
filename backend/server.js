@@ -960,8 +960,15 @@ setInterval(async () => {
   }
 }, 60000); // 每分钟清理一次
 
-server.listen(PORT, () => {
-  console.log(`🚀 PSYCHO Server running on port ${PORT}`);
-  console.log(`🌐 WebSocket ready for real-time connections`);
-  console.log(`💀 Dark psychology platform activated`);
-});
+// Vercel compatibility
+if (process.env.NODE_ENV === 'production' && process.env.VERCEL) {
+  // Export for Vercel serverless functions
+  module.exports = app;
+} else {
+  // Start server normally for local development
+  server.listen(PORT, () => {
+    console.log(`🚀 PSYCHO Server running on port ${PORT}`);
+    console.log(`🌐 WebSocket ready for real-time connections`);
+    console.log(`💀 Dark psychology platform activated`);
+  });
+}
