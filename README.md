@@ -1,172 +1,185 @@
 # 🧠 PSYCHO Platform
 
-一个支持心理匹配、实时聊天和双语互动的完整心理健康平台。
+A comprehensive mental health social platform with psychological matching, real-time chat, and bilingual interaction features.
 
-## ✨ 核心功能
+## ✨ Core Features
 
-### 🎯 已实现的完整功能
-- ✅ **用户系统**: 完整的注册、登录、JWT认证
-- ✅ **智能匹配**: 基于心理特征的多维度用户匹配算法  
-- ✅ **实时聊天**: Socket.io实现的跨用户实时消息系统
-- ✅ **数据持久化**: MongoDB数据库存储，支持离线模式
-- ✅ **双语支持**: 完整的中英文切换功能
-- ✅ **内心迷宫游戏**: 完全双语化的心理探索游戏
-- ✅ **生产环境配置**: 支持Netlify + Heroku + MongoDB Atlas部署
+### 🎯 Fully Implemented Features
+- ✅ **User System**: Complete registration, login, and JWT authentication
+- ✅ **Smart Matching**: Multi-dimensional user matching algorithm based on psychological traits  
+- ✅ **Real-time Chat**: Cross-user real-time messaging system powered by Socket.io
+- ✅ **Data Persistence**: MongoDB database storage with offline mode support
+- ✅ **Bilingual Support**: Complete Chinese-English language switching
+- ✅ **Mind Maze Game**: Fully bilingual psychological exploration game
+- ✅ **Production Ready**: Supports deployment on Netlify + Render + MongoDB Atlas
 
-## 🏗️ 技术架构
+## 🏗️ Technical Architecture
 
 ```
-前端 (React + TypeScript)
-├── 用户认证系统
-├── 心理匹配算法 
-├── 实时聊天界面
-├── 多语言国际化
-└── 心理游戏模块
+Frontend (React + TypeScript)
+├── User Authentication System
+├── Psychological Matching Algorithm 
+├── Real-time Chat Interface
+├── Multi-language Internationalization
+└── Psychological Game Module
 
-后端 (Node.js + Express)  
+Backend (Node.js + Express)  
 ├── RESTful API
-├── JWT身份验证
-├── Socket.io实时通信
-├── MongoDB数据存储
-└── 智能匹配引擎
+├── JWT Authentication
+├── Socket.io Real-time Communication
+├── MongoDB Data Storage
+└── Intelligent Matching Engine
 ```
 
-## 🚀 本地开发
+## 🚀 Local Development
 
-### 启动开发环境
+### Start Development Environment
 ```bash
-# 安装依赖
+# Install dependencies
 npm install
 
-# 同时启动前后端
+# Start both frontend and backend simultaneously
 npm run dev
 
-# 或分别启动
+# Or start separately
 npm run frontend  # http://localhost:3000
 npm run backend   # http://localhost:5001
 ```
 
-### 环境要求
+### Environment Requirements
 - Node.js >= 18.0.0
 - npm >= 9.0.0
-- MongoDB (可选，有离线模式)
+- MongoDB (optional, has offline mode)
 
-## 🌐 生产环境部署
+## 🌐 Production Deployment
 
-### 快速部署
+### Quick Deployment
 ```bash
-# 使用自动部署脚本
+# Use automated deployment script
 ./deploy.sh
 ```
 
-### 手动部署步骤
-1. **设置MongoDB Atlas** - 创建云数据库
-2. **部署后端到Heroku** - API服务器
-3. **部署前端到Netlify** - 静态网站
+### Manual Deployment Steps
+1. **Setup MongoDB Atlas** - Create cloud database
+2. **Deploy Backend to Render** - API server
+3. **Deploy Frontend to Netlify** - Static website
 
-详细步骤请查看 [DEPLOYMENT.md](./DEPLOYMENT.md)
+For detailed steps, see [DEPLOYMENT.md](./DEPLOYMENT.md)
 
-## 🎮 功能演示
+## 🎮 Feature Demonstration
 
-### 用户注册和登录
-- 支持邮箱注册，密码加密存储
-- JWT token持久化登录
-- 自动状态恢复
+### User Registration and Login
+- Email registration support with encrypted password storage
+- JWT token persistent login
+- Automatic state recovery
 
-### 智能用户匹配
-- 基于心理特征的兼容性分析
-- AI增强的多维度匹配算法
-- 神秘度和兼容度评分系统
+### Intelligent User Matching
+- Compatibility analysis based on psychological traits
+- AI-enhanced multi-dimensional matching algorithm
+- Mystery and compatibility scoring system
 
-### 实时聊天系统  
-- WebSocket即时消息
-- 情感分析和情绪标识
-- 聊天历史持久化存储
+### Real-time Chat System  
+- WebSocket instant messaging
+- Emotional analysis and mood identification
+- Chat history persistent storage
 
-### 内心迷宫游戏
-- 完整的故事驱动体验
-- 中英文完全双语化
-- 心理分析和选择后果
+### Mind Maze Game
+- Complete story-driven experience
+- Fully bilingual in Chinese and English
+- Psychological analysis and choice consequences
 
-## 🔧 配置文件
+## 🔧 Configuration Files
 
-### 开发环境
-- `frontend/.env` - 前端开发配置
-- `backend/.env` - 后端开发配置
+### Development Environment
+- `frontend/.env` - Frontend development configuration
+- `backend/.env` - Backend development configuration
 
-### 生产环境  
-- `frontend/.env.production` - 前端生产配置
-- `backend/.env.production` - 后端生产配置
-- `frontend/netlify.toml` - Netlify部署配置
+### Production Environment  
+- `frontend/.env.production` - Frontend production configuration
+- `backend/.env.production` - Backend production configuration
+- `netlify.toml` - Netlify deployment configuration
 
-## 🧪 测试跨网络功能
+## 🧪 Testing Cross-Network Features
 
-部署完成后，您可以：
-1. 让不同网络的朋友访问您的网站
-2. 他们注册不同的账户
-3. 测试相互匹配和实时聊天
-4. 验证数据持久化和登录状态恢复
+After deployment, you can:
+1. Have friends from different networks access your website
+2. They register different accounts
+3. Test mutual matching and real-time chat
+4. Verify data persistence and login state recovery
 
-## 🔒 安全特性
+## 🔒 Security Features
 
-- ✅ JWT身份验证
-- ✅ 密码bcrypt加密
-- ✅ CORS跨域保护
-- ✅ 输入数据验证
-- ✅ 安全的环境变量管理
+- ✅ JWT Authentication
+- ✅ Password bcrypt encryption
+- ✅ CORS cross-origin protection
+- ✅ Input data validation
+- ✅ Secure environment variable management
 
-## 📱 支持的功能
+## 📱 Supported Features
 
-### 用户功能
-- [x] 用户注册/登录
-- [x] 个人资料管理
-- [x] 心理特征分析
-- [x] 匹配偏好设置
+### User Features
+- [x] User registration/login
+- [x] Personal profile management
+- [x] Psychological trait analysis
+- [x] Matching preference settings
 
-### 交互功能  
-- [x] 智能用户匹配
-- [x] 实时聊天对话
-- [x] 情感状态分析
-- [x] 聊天历史记录
+### Interactive Features  
+- [x] Intelligent user matching
+- [x] Real-time chat conversations
+- [x] Emotional state analysis
+- [x] Chat history records
 
-### 游戏功能
-- [x] 内心迷宫探索
-- [x] 心理测试评估  
-- [x] 成就系统
-- [x] 多语言支持
+### Game Features
+- [x] Mind maze exploration
+- [x] Psychological test assessments  
+- [x] Achievement system
+- [x] Multi-language support
 
-## 🌍 国际化支持
+## 🌍 Internationalization Support
 
-完整支持中文和英文：
-- [x] 界面文本翻译
-- [x] 游戏内容本地化  
-- [x] 错误消息翻译
-- [x] 动态语言切换
+Full support for Chinese and English:
+- [x] Interface text translation
+- [x] Game content localization  
+- [x] Error message translation
+- [x] Dynamic language switching
 
-## 📊 系统状态
+## 📊 System Status
 
-### 本地开发 ✅
-- 前端: http://localhost:3000  
-- 后端: http://localhost:5001
-- 数据库: MongoDB本地或内存模式
+### Local Development ✅
+- Frontend: http://localhost:3000  
+- Backend: http://localhost:5001
+- Database: MongoDB local or memory mode
 
-### 生产环境准备 ✅
-- 前端: 可部署至Netlify
-- 后端: 可部署至Heroku  
-- 数据库: 可连接MongoDB Atlas
+### Production Ready ✅
+- Frontend: Deployable to Netlify
+- Backend: Deployable to Render  
+- Database: Connectable to MongoDB Atlas
 
-## 🚀 部署成功标志
+## 🚀 Successful Deployment Indicators
 
-当您完成部署后，应该看到：
-1. ✅ 跨网络用户可以注册和登录
-2. ✅ 用户数据保存在云数据库
-3. ✅ 不同用户可以匹配并聊天  
-4. ✅ WebSocket实时消息正常
-5. ✅ 语言切换功能正常
-6. ✅ 所有游戏功能双语化
+When you complete deployment, you should see:
+1. ✅ Cross-network users can register and login
+2. ✅ User data saved in cloud database
+3. ✅ Different users can match and chat  
+4. ✅ WebSocket real-time messaging works
+5. ✅ Language switching functions properly
+6. ✅ All game features are bilingual
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, TypeScript, Styled Components, React Router, i18next
+- **Backend**: Node.js, Express, Socket.io, MongoDB, JWT, bcrypt
+- **Database**: MongoDB with Atlas cloud support
+- **Deployment**: Netlify (frontend) + Render (backend) + MongoDB Atlas
+- **Authentication**: JWT with secure token management
+- **Real-time**: Socket.io for WebSocket communications
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-🎉 **PSYCHO Platform 现在已完全准备好支持真正的跨网络用户交互！**
+🎉 **PSYCHO Platform is now fully ready to support real cross-network user interaction!**
 
-按照部署指南，您的平台将能够让世界各地的用户注册、匹配并进行实时心理互动。
+Follow the deployment guide and your platform will enable users worldwide to register, match, and engage in real-time psychological interactions.
