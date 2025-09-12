@@ -6,15 +6,16 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "build": "echo 'No build process needed for backend'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "node": "18.x",
+    "npm": "9.x"
   },
-  "keywords": ["psycho", "mental-health", "matching", "chat"],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["psycho", "mental-health", "matching", "chat", "render", "nodejs"],
+  "author": "Jackie Chen",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.2",
