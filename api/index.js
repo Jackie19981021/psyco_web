@@ -84,11 +84,26 @@ const authenticateToken = (req, res, next) => {
 };
 
 // Routes
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'PSYCHO Platform API is running!',
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'production',
+    endpoints: {
+      hello: '/api/hello',
+      health: '/api/health',
+      register: '/api/auth/register',
+      login: '/api/auth/login',
+      users: '/api/users'
+    }
+  });
+});
+
 app.get('/api', (req, res) => {
   res.json({ 
     message: 'PSYCHO Platform API is running!',
     timestamp: new Date().toISOString(),
-    environment: process.env.NODE_ENV || 'development'
+    environment: process.env.NODE_ENV || 'production'
   });
 });
 
