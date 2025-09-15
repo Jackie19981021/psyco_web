@@ -1,17 +1,30 @@
 {
   "name": "psycho-platform-api",
-  "version": "1.0.0",
-  "description": "PSYCHO Platform API - Serverless Functions",
-  "main": "api/hello.js",
+  "version": "1.0.0", 
+  "description": "PSYCHO Platform API - Complete Backend with Authentication & Chat",
+  "main": "api/index.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "cd backend && npm start",
-    "frontend": "cd frontend && npm start"
+    "backend": "cd backend && npm start", 
+    "frontend": "cd frontend && npm start",
+    "start": "node api/index.js"
   },
-  "keywords": ["mental-health", "api", "serverless", "vercel"],
+  "keywords": ["mental-health", "api", "authentication", "chat", "mongodb", "express"],
   "author": "Jackie Chen",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5", 
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.19.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
 }
