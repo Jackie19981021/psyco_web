@@ -4,7 +4,7 @@
   "description": "PSYCHO Platform API - Complete Backend with Authentication & Chat",
   "main": "api/index.js",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   },
   "scripts": {
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
