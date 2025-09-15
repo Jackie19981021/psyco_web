@@ -2,18 +2,30 @@
   "name": "soul-connect-platform",
   "version": "1.0.0",
   "description": "创新交友平台 - 为拥有特殊心理特征的用户提供真正的连接",
-  "main": "index.js",
+  "main": "api/index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && npm start",
     "frontend": "cd frontend && npm start",
     "build": "cd frontend && npm run build",
     "install-all": "npm install && cd frontend && npm install --legacy-peer-deps && cd ../backend && npm install",
-    "start": "./start.sh"
+    "start": "node api/index.js"
   },
   "keywords": ["mental-health", "dating", "social", "psychology", "innovation"],
   "author": "Your Name",
   "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1", 
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.19.0",
+    "socket.io": "^4.8.1"
+  },
   "devDependencies": {
     "concurrently": "^8.0.1"
   }
